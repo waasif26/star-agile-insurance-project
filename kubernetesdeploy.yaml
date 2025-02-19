@@ -18,7 +18,7 @@ spec:
       - name: insurance-eta-container
         image: waasifahmed/insurance-eta-app
         ports:
-        - containerPort: 8082
+        - containerPort: 8084
 ---
 apiVersion: v1
 kind: Service
@@ -32,6 +32,6 @@ spec:
 
   type: NodePort
   ports:
-  - nodePort: 31030
-    port: 8082
-    targetPort: 8082
+  - nodePort: 3000
+    port: 8084
+    targetPort: 8084
